@@ -132,6 +132,9 @@ const html = `       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="card-header">Our Slogan</div>
             <div class="card-body">you deserve more health</div>
         </div>
+        <div id="fruits-img">
+           <img src="" alt="...">
+        </div>
     </div>
 </div>
 </div>
