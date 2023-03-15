@@ -82,19 +82,19 @@ const html = `       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
         <!-- Nested row for non-featured blog posts-->
         <div class="row">
-            <div class="col-lg-6">
-                <!-- Blog post-->
-                <div id="first-column-card">   
-
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div id="second-column-card">
-
-                </div>
+         <div class="col-lg-6">
+            <div id="first-column">
 
             </div>
+
+            </div>
+            <div class="col-lg-6">
+            <div id="second-column">
+            </div>
+            </div>
+         
+
+
         </div>
         <!-- Pagination-->
         <nav aria-label="Pagination">
@@ -117,7 +117,7 @@ const html = `       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="card-header">Search</div>
             <div class="card-body">
                 <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                    <input class="form-control" id="fruitName" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
                     <button class="btn btn-primary" id="button-search" type="button">Go!</button>
                 </div>
             </div>
@@ -132,8 +132,8 @@ const html = `       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="card-header">Our Slogan</div>
             <div class="card-body">you deserve more health</div>
         </div>
-        <div id="fruits-img">
-           <img src="" alt="...">
+        <div id="fruit-pic">
+           
         </div>
     </div>
 </div>
@@ -150,9 +150,11 @@ const html = `       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 
 let fruitsCard = "";
-let fColumn = "";
-let sColumn = "";
+let cardSwap = "";
+let firstRowCard = "";
+let secondRowCard = "";
 let categoriesSection = "";
+let picture = "";
 
 fetch("../db/data.json")
 .then(response => response.json())
@@ -176,9 +178,10 @@ fetch("../db/data.json")
 
         const [fCard,sCard,tCard,frCard] = rest;
 
-        function column1(...firstColumn){
-            firstColumn.forEach((el)=>{
-                fColumn +=`
+        function cards(...cardDetails){
+            cardDetails.forEach((el,index)=>{
+
+                cardSwap =`
             <div class="card mb-4">
             <a href="#!"><img class="card-img-top" src="${el.image}" alt="..." /></a>
             <div class="card-body">
@@ -189,39 +192,30 @@ fetch("../db/data.json")
             </div>
            </div>
             ` ;
-            document.getElementById("first-column-card").innerHTML = fColumn;
+          
+            
+
+            if(index===0 || index===1){
+                firstRowCard += cardSwap;
+               document.getElementById("first-column").innerHTML = firstRowCard;
+               console.log(firstRowCard)
+            }else if(index === 2 || index === 3)
+
+            {
+                secondRowCard += cardSwap
+                document.getElementById("second-column").innerHTML = secondRowCard;
+               
+            }
             });
           
         }
-
-        function column2(...secondColumn){
-
-            secondColumn.forEach((el)=>{
-
-                sColumn += `
-                <div class="card mb-4">
-                <a href="#!"><img class="card-img-top" src="${el.image}" alt="..." /></a>
-                <div class="card-body">
-                    <div class="small text-muted">${month}-${day}-${year}</div>
-                    <h2 class="card-title h4">${el.title}</h2>
-                    <p class="card-text">${el.paragraph}</p>
-                    <a class="btn btn-primary" href="${el.link}">Read more →</a>
-                </div>
-               </div>
-                ` ;
-                document.getElementById("second-column-card").innerHTML = sColumn;
-
-            })
-
-        }
-        document.getElementById("fruits-card").innerHTML = fruitsCard;
-
         //function called
-        column1(fCard,sCard);
-        column2(tCard,frCard);
+        cards(fCard,sCard,tCard,frCard);
        
+        
+        document.getElementById("fruits-card").innerHTML = fruitsCard;      
     };
-
+//main function called
 mainCard(fruitsinfo,appalInfo,bananaInfo,mangoInfo,litchiInfo);
 
 
@@ -235,8 +229,8 @@ Categories.forEach((el)=>{
         <div class="row">
             <div class="col-sm-6">
                 <ul class="list-unstyled mb-0">
-                    <li><a href="#!">${el.Categories.first}</a></li>
-                    <li><a href="#!">${el.Categories.second}</a></li>
+                    <li><a href="#">${el.Categories.first}</a></li>
+                    <li><a href="#">${el.Categories.second}</a></li>
                    
                 </ul>
             </div>
@@ -250,9 +244,10 @@ Categories.forEach((el)=>{
         </div>
     </div>
     `;
-
     document.getElementById("categories-section").innerHTML = categoriesSection;
+
+   
 });
 })
 
-        
+       
