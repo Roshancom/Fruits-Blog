@@ -1,0 +1,32 @@
+.card-img{
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto;
+}
+.card-img-top{
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto;
+}
+#card{
+   display: flex;
+  flex-wrap: wrap;
+   
+}
+.card-wrapper{
+    width: 500px;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+    margin: 5px;
+    margin: 100px;
+    
+}
+#fruits-wrapper{
+    width: auto;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+}
+#fruits-wrapper p{
+    text-align: center;
+   
+}

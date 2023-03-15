@@ -1,0 +1,48 @@
+[
+   
+   {
+      "title":"fruits",
+      "paragraph":"One of the main functions of a fruit is to spread the seeds and allow the plant to reproduce. Therefore, all flowering plants produce fruit, regardless of whether the fruit is edible, sweet, or soft. This means that, although we call peppers and cucumbers vegetables, they are technically fruits (Figure 2). Acorns, maple keys, and the outside of sunflower seeds are also considered fruits. They too develop from a series of transformations of the carpel, and protect, store, and help to scatter the seeds of a flowering plant.",
+      "image":"./fruits.jpeg",
+      "link":"https://www.britannica.com/science/fruit-plant-reproductive-body"
+   },  
+            
+    {
+       
+      "title":"Apple",
+      "paragraph": "Apple  (Malus sp., Rosaceae) is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus. The apple tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists.",
+      "image":"./apple.webp",
+      "link":"https://www.medicalnewstoday.com/articles/267290"    
+       
+   },
+   {
+    "title":"Banana",
+    "paragraph": "The scientific name for banana is Musa, from the Musaceae family of flowering tropical plants, which distinctively showcases the banana fruit clustered at the top of the plant. The mild-tasting and disease-resistant Cavendish type is the main variety sold in the U.S. and Europe. Despite some negative attention, bananas are nutritious and may even carry the title of the first “superfood,” endorsed by the American Medical Association in the early 20th century as a health food for children and a treatment for celiac disease.",
+    "image":"./banana.webp",
+    "link":"https://www.medicalnewstoday.com/articles/267290" 
+   },
+   {
+    "title":"Mango ",
+    "paragraph":"Mangoes are sweet, creamy fruits that have a range of possible health benefits. The nutrients they contain may help boost eye, skin, and hair health and prevent cancer and heart disease.The mango is a tropical stone fruit and member of the drupe family. This is a type of plant food with a fleshy outer section that surrounds a shell, or pit. This pit contains a seed.",
+    "image":"./mango.jpeg",
+    "link":"https://www.healthline.com/nutrition/foods/bananas#:~:text=Bananas%20are%20among%20the%20most,and%20various%20antioxidants%20and%20phytonutrients."
+   },
+   {
+    "title":"Litchi",
+    "paragraph":"lychee, (Litchi chinensis), also spelled litchi or lichi, evergreen tree of the soapberry family (Sapindaceae), grown for its edible fruit. Lychee is native to Southeast Asia and has been a favourite fruit of the Cantonese since ancient times. The fruit is usually eaten fresh but can also be canned or dried.",
+    "image":"./litchi.jpeg",
+    "link":"https://www.netmeds.com/health-library/post/lichilitchi-fruit-health-benefits-nutrition-uses-for-skin-recipes-side-effects"
+   },
+   [
+      {
+      "Categories":{
+         "first":"Apple",
+         "second":"Banana",
+         "third":"Mango",
+         "fourth":"Litchi"
+      }
+      }
+   ]
+  
+]
+  
