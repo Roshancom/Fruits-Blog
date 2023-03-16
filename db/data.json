@@ -1,5 +1,14 @@
 [
-   
+   [
+      {
+      "Categories":{
+         "first":"Apple",
+         "second":"Banana",
+         "third":"Mango",
+         "fourth":"Litchi"
+      }
+      }
+   ],
    {
       "title":"fruits",
       "paragraph":"One of the main functions of a fruit is to spread the seeds and allow the plant to reproduce. Therefore, all flowering plants produce fruit, regardless of whether the fruit is edible, sweet, or soft. This means that, although we call peppers and cucumbers vegetables, they are technically fruits (Figure 2). Acorns, maple keys, and the outside of sunflower seeds are also considered fruits. They too develop from a series of transformations of the carpel, and protect, store, and help to scatter the seeds of a flowering plant.",
@@ -32,16 +41,7 @@
     "paragraph":"lychee, (Litchi chinensis), also spelled litchi or lichi, evergreen tree of the soapberry family (Sapindaceae), grown for its edible fruit. Lychee is native to Southeast Asia and has been a favourite fruit of the Cantonese since ancient times. The fruit is usually eaten fresh but can also be canned or dried.",
     "image":"./litchi.jpeg",
     "link":"https://www.netmeds.com/health-library/post/lichilitchi-fruit-health-benefits-nutrition-uses-for-skin-recipes-side-effects"
-   },
-   [
-      {
-      "Categories":{
-         "first":"Apple",
-         "second":"Banana",
-         "third":"Mango",
-         "fourth":"Litchi"
-      }
-      }
-   ]
+   }
+   
 ]
   

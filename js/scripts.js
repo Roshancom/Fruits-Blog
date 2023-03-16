@@ -154,32 +154,18 @@ let cardSwap = "";
 let firstRowCard = "";
 let secondRowCard = "";
 let categoriesSection = "";
-let picture = "";
+
 
 fetch("../db/data.json")
 .then(response => response.json())
 .then( data => {
-    const [fruitsinfo,appalInfo,bananaInfo,mangoInfo,litchiInfo,Categories] = data;
+    const [Categories,fruitsinfo,appalInfo,bananaInfo,mangoInfo,litchiInfo] = data;
 
-    //
-    function mainCard(fruits,...rest){
+    // function to add fruits cards.
+    function mainCard(...rest){
        
-        fruitsCard = `
-        <div class="card mb-4">
-        <a href="#!"><img class="card-img-top" src="${fruits.image}" alt="..." /></a>
-        <div class="card-body">
-            <div class="small text-muted">${month}-${day}-${year}</div>
-            <h2 class="card-title h4">${fruits.title}</h2>
-            <p class="card-text">${fruits.paragraph}</p>
-            <a class="btn btn-primary" href="${fruits.link}">Read more →</a>
-        </div>
-       </div>
-        `;
-
-        const [fCard,sCard,tCard,frCard] = rest;
-
-        function cards(...cardDetails){
-            cardDetails.forEach((el,index)=>{
+       
+            rest.forEach((el,index)=>{
 
                 cardSwap =`
             <div class="card mb-4">
@@ -193,33 +179,27 @@ fetch("../db/data.json")
            </div>
             ` ;
           
-            
+            if(index === 0){
+                fruitsCard = cardSwap;
+                document.getElementById("fruits-card").innerHTML = fruitsCard;
 
-            if(index===0 || index===1){
+            }else if(index===1 || index===2){
                 firstRowCard += cardSwap;
                document.getElementById("first-column").innerHTML = firstRowCard;
                console.log(firstRowCard)
-            }else if(index === 2 || index === 3)
+            }else if(index === 3 || index === 4)
 
             {
                 secondRowCard += cardSwap
                 document.getElementById("second-column").innerHTML = secondRowCard;
                
             }
-            });
-          
+            });            
         }
-        //function called
-        cards(fCard,sCard,tCard,frCard);
-       
-        
-        document.getElementById("fruits-card").innerHTML = fruitsCard;      
-    };
-//main function called
 mainCard(fruitsinfo,appalInfo,bananaInfo,mangoInfo,litchiInfo);
 
 
-// Categories widget
+// Add  Categories 
 Categories.forEach((el)=>{
         console.log(el.Categories.second);
 
