@@ -1,18 +1,18 @@
 [
    [
-      {
-      "Categories":{
-         "first":"Apple",
-         "second":"Banana",
-         "third":"Mango",
-         "fourth":"Litchi"
-      }
-      }
+      
+      
+       "Apple",
+       "Banana",
+       "Mango",
+       "Litchi"
+      
+      
    ],
    {
-      "title":"fruits",
+      "title":"Fruits",
       "paragraph":"One of the main functions of a fruit is to spread the seeds and allow the plant to reproduce. Therefore, all flowering plants produce fruit, regardless of whether the fruit is edible, sweet, or soft. This means that, although we call peppers and cucumbers vegetables, they are technically fruits (Figure 2). Acorns, maple keys, and the outside of sunflower seeds are also considered fruits. They too develop from a series of transformations of the carpel, and protect, store, and help to scatter the seeds of a flowering plant.",
-      "image":"./fruits.jpeg",
+      "image":"./assets/fruits.jpeg",
       "link":"https://www.britannica.com/science/fruit-plant-reproductive-body"
    },  
             
@@ -20,28 +20,72 @@
        
       "title":"Apple",
       "paragraph": "Apple  (Malus sp., Rosaceae) is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus. The apple tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists.",
-      "image":"./apple.webp",
+      "image":"./assets/Apple.png",
       "link":"https://www.medicalnewstoday.com/articles/267290"    
        
    },
    {
     "title":"Banana",
     "paragraph": "The scientific name for banana is Musa, from the Musaceae family of flowering tropical plants, which distinctively showcases the banana fruit clustered at the top of the plant. The mild-tasting and disease-resistant Cavendish type is the main variety sold in the U.S. and Europe. Despite some negative attention, bananas are nutritious and may even carry the title of the first “superfood,” endorsed by the American Medical Association in the early 20th century as a health food for children and a treatment for celiac disease.",
-    "image":"./banana.webp",
+    "image":"./assets/Banana.png",
     "link":"https://www.medicalnewstoday.com/articles/267290" 
    },
    {
-    "title":"Mango ",
+    "title":"Mango",
     "paragraph":"Mangoes are sweet, creamy fruits that have a range of possible health benefits. The nutrients they contain may help boost eye, skin, and hair health and prevent cancer and heart disease.The mango is a tropical stone fruit and member of the drupe family. This is a type of plant food with a fleshy outer section that surrounds a shell, or pit. This pit contains a seed.",
-    "image":"./mango.jpeg",
+    "image":"./assets/Mango.png",
     "link":"https://www.healthline.com/nutrition/foods/bananas#:~:text=Bananas%20are%20among%20the%20most,and%20various%20antioxidants%20and%20phytonutrients."
    },
    {
     "title":"Litchi",
     "paragraph":"lychee, (Litchi chinensis), also spelled litchi or lichi, evergreen tree of the soapberry family (Sapindaceae), grown for its edible fruit. Lychee is native to Southeast Asia and has been a favourite fruit of the Cantonese since ancient times. The fruit is usually eaten fresh but can also be canned or dried.",
-    "image":"./litchi.jpeg",
+    "image":"./assets/litchi.jpeg",
     "link":"https://www.netmeds.com/health-library/post/lichilitchi-fruit-health-benefits-nutrition-uses-for-skin-recipes-side-effects"
+   },
+   {
+      "fruits":{
+         "p1":"One of the main functions of a fruit is to spread the seeds and allow the plant to reproduce. Therefore, all flowering plants produce fruit, regardless of whether the fruit is edible, sweet, or soft.",
+         "p2":"This means that, although we call peppers and cucumbers vegetables, they are technically fruits (Figure 2). Acorns, maple keys, and the outside of sunflower seeds are also considered fruits.",
+         "p3":"They too develop from a series of transformations of the carpel, and protect, store, and help to scatter the seeds of a flowering plant.",
+         "h1":"Fruit regions",
+         "p4":"A fruit, ripened ovary, has three major regions that are sometimes difficult to distinguish from each other. The outer layer, sometimes referred to as the skin, is actually called the exocarp. The mesocarp is the fleshy portion that is usually eaten when consuming fruit.",
+         "p5":"The endocarp is the innermost boundary around the seed. Sometimes the endocarp is hard and stony such as a peach pit that surrounds the seed. The endocarp can also be papery as in apples, where it is barely visible in cross-section. All three of these regions; the exocarp, mesocarp, and endocarp, are collectively called the pericarp. The pericarp can be quite thin, as is the case with dry fruits."
+      },
+      "apple":{
+         "p1":"Apple (Malus sp., Rosaceae) is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.",
+         "p2":"The apple tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists.",
+         "p3":"Apples are among the world's most popular fruits. They grow on the apple tree (Malus domestica), originally from Central Asia. Apples are high in fiber, vitamin C, and various antioxidants. They are also very filling, considering their low calorie count.",
+         "h1":"Apples and Health",
+         "p4":"Apples are rich in quercetin and pectin, both of which are credited for supplying apples with their health benefits. [1] Quercetin is a flavonoid, a type of naturally occurring plant chemical that has antioxidant and anti-inflammatory effects.",
+         "p5":"Pectin is a type of soluble fiber that may help prevent constipation and have a modest effect on lowering LDL, the “bad” cholesterol. Pectin is also fermented by beneficial bacteria in the colon, which produces short chain fatty acids that may play a role in the prevention of chronic diseases, including certain cancers and bowel disorders"
+      },
+      "banana":{
+         "p1":"The scientific name for banana is Musa, from the Musaceae family of flowering tropical plants, which distinctively showcases the banana fruit clustered at the top of the plant.",
+         "p2":"The mild-tasting and disease-resistant Cavendish type is the main variety sold in the U.S. and Europe. ",
+         "p3":"Despite some negative attention, bananas are nutritious and may even carry the title of the first “superfood,” endorsed by the American Medical Association in the early 20th century as a health food for children and a treatment for celiac disease.",
+         "h1":"Fibers",
+         "p4":"A high proportion of the starch in unripe bananas is resistant starch, which passes through your gut undigested.In your large intestine, this starch is fermented by bacteria to form butyrate, a short-chain fatty acid that appears to have beneficial effects on gut health.",
+         "p5":"Bananas are also a good source of other types of fiber, such as pectin. Some of the pectin in bananas is water-soluble."
+      },
+      "mango":{
+         "p1":"Mangoes are sweet, creamy fruits that have a range of possible health benefits. The nutrients they contain may help boost eye, skin, and hair health and prevent cancer and heart disease.",
+         "p2":"The mango is a tropical stone fruit and member of the drupe family. This is a type of plant food with a fleshy outer section that surrounds a shell, or pit. This pit contains a seed.",
+         "p3":"The changes on nutritional and phytochemical composition of mango fruit during the development and ripening are explained.",
+         "h1":"Nutritional Composition",
+         "p4":"Mango fruit is an important source of macronutrients such as carbohydrates, lipid and fatty acids, protein and amino acids, and organic acids. Also, mango has micronutrients such as vitamins and minerals and, finally, non-nutrients compound such as phenolic compounds, flavonoids and other polyphenols, chlorophyll, carotenoids, and volatile compounds. ",
+         "p5":"The energy value for 100 g of the pulp ranges from 60 to 190 kcal (250–795 kJ), being an important fruit for the human diet (Table 1). The nutritional, non-nutritional, and water contents of mango fruit vary depending of the cultivar and several preharvest and postharvest factors."
+      },
+      "litchi":{
+         "p1":"lychee, (Litchi chinensis), also spelled litchi or lichi, evergreen tree of the soapberry family (Sapindaceae), grown for its edible fruit. ",
+         "p2":"Lychee is native to Southeast Asia and has been a favourite fruit of the Cantonese since ancient times. The fruit is usually eaten fresh but can also be canned or dried.",
+         "p3":"The fruit is ellipsoidal or nearly round in shape, estimated at 2.5 cm in diameter and clothed with a coarse thicker ring or pericarp with strawberry to red in color at maturity. Inside the pericarp is lychee aril that is milky-white and semitransparent with a sweet, juicy, and delicious taste. ",
+         "h1":"The History of Lychee Seed",
+         "p4":"Lychee seed, the dry mature seed of Litchi chinensis Sonn, is known to have a remarkable medicinal value in ancient China. The oldest available Chinese written source which described the application of lychee seed is Ben Cao Yan Yi traced back to the Song dynasty (AD 1116). ",
+         "p5":"In ancient Chinese medical practices, lychee seed was always used for hernia, orchitis, ulcers, and intestinal troubles. Diabetes-related symptoms were known as “Xiaoke” (emaciation and thirst) in the ancient Chinese medical literature (Tong et al., 2012). In Compendium of Materia Medica (Ben Cao Gang Mu) written by Li Shizhen (from 1518 to 1593 AD) during the Ming dynasty, the lychee seed was warm in nature, sweet in taste, and could act as a beneficial agent in thirst-quenching. Numerous Chinese patent medicines such as Jinlida granule (Tian et al., 2018) and Jiangtangtongmai tablets (Su et al., 2017) approved by the Chinese Food and Drug Administration, containing lychee seed, were clinically used for the treatment of diabetes."
+      }
+      
    }
+
    
 ]
   

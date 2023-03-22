@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "zenMode.hideStatusBar": true,
+    "debug.enableStatusBarColor": true,
+    "workbench.statusBar.visible": true
 }
